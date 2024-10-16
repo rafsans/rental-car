@@ -65,8 +65,15 @@ body {
     top: 0;
     left: 0;
     width: 100%;
+    /* background-position: center; */
+    /* background-size: cover; */
     position: absolute;
     z-index: -1;
+    /* height: 100vh; */
+}
+
+.hamburger {
+    display: none;
 }
 
 .hero h1 {
@@ -218,4 +225,34 @@ body {
     padding: 0.5em 1.5em;
     border: none;
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .hamburger{
+        display: block;
+    }
+    .nav-links {
+        display: none;
+    }
+    .wrapper-hamburger {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        gap: 10px;
+    }
+
+    .hero img{
+        top: 0;
+        left: 0;
+        width: -200%;
+        background-position: center;
+        position: absolute;
+        z-index: -1;
+        height: 100vh;
+    }
 }

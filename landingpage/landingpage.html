@@ -28,7 +28,12 @@
           <li><a href="#">Shop</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
-        <a href="#" class="login">Login</a>
+        <div class="wrapper-hamburger">
+          <a href="#" class="login">Login</a>
+          <div class="hamburger">
+            <i class="fa fa-bars fa-3x"></i>
+          </div>
+        </div>
       </nav>
       <div class="hero">
         <img src="../assets/hero.jpeg" alt="Hero Image" />
@@ -45,17 +50,21 @@
       <div class="service-container">
         <div class="service-box">
           <span><i class="fa-solid fa-map-location-dot fa-5x"></i></span>
-          <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur
             numquam dolor cumque eum ipsa blanditiis! Modi, sint assumenda
             autem, cumque ratione error quisquam rerum atque quod consectetur
-            maxime ducimus omnis?</p>
+            maxime ducimus omnis?
+          </p>
         </div>
         <div class="service-box">
           <i class="fa-solid fa-plane fa-5x"></i>
-          <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur
             numquam dolor cumque eum ipsa blanditiis! Modi, sint assumenda
             autem, cumque ratione error quisquam rerum atque quod consectetur
-            maxime ducimus omnis?</p>
+            maxime ducimus omnis?
+          </p>
         </div>
         <div class="service-box">
           <i class="fa-solid fa-suitcase-rolling fa-5x"></i>
@@ -122,4 +131,12 @@
       </div>
     </footer>
   </body>
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("nav-active");
+    });
+  </script>
 </html>
