@@ -246,9 +246,8 @@ body {
     transition: transform 0.3s ease-in-out;
   }
 
-  /* When the .nav-active class is added, the menu slides in */
   .nav-links.nav-active {
-    transform: translateX(0); /* Show the menu */
+    transform: translateX(0);
     position: fixed;
     top: -1px;
   }
@@ -262,7 +261,7 @@ body {
   }
 
   .hamburger {
-    display: block; /* Display the hamburger on smaller screens */
+    display: block;
   }
 
   .nav-links {
@@ -275,12 +274,11 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
-    transform: translateX(100%); /* Initially hidden */
+    transform: translateX(100%);
     transition: transform 0.5s ease-in-out;
     z-index: 999;
   }
 
-  /* Wrapper for hamburger and login button */
   .wrapper-hamburger {
     display: flex;
     align-items: center;
@@ -291,7 +289,7 @@ body {
   .hero img {
     top: 0;
     left: 0;
-    width: 100%; /* Full width for mobile */
+    width: 100%;
     background-position: center;
     position: absolute;
     z-index: -1;
