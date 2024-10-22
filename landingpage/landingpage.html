@@ -20,6 +20,9 @@
           <img src="../assets/logo.png" alt="Legacy Rental Cars" />
         </div>
         <ul class="nav-links">
+          <div class="close">
+            <i class="fa-solid fa-x"></i>
+          </div>
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Service</a></li>
@@ -135,12 +138,16 @@
     const hamburger = document.querySelector(".hamburger");
     const navLinks = document.querySelector(".nav-links");
     const body = document.querySelector("body");
-
+    const closeHamburger = document.querySelector('.close');
     hamburger.addEventListener("click", () => {
       navLinks.classList.toggle("nav-active");
       if (navLinks.classList.contains("nav-active")) {
         body.style.overflow = "hidden"; 
       }
+    });
+
+    closeHamburger.addEventListener("click", () => {
+      navLinks.classList.remove("nav-active");
     });
   </script>
 </html>

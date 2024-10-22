@@ -232,6 +232,7 @@ body {
 }
 
 @media (max-width: 768px) {
+    
   .navbar ul {
     flex-direction: column;
     position: absolute;
@@ -251,6 +252,14 @@ body {
     position: fixed;
     top: -1px;
   }
+  .close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 2rem;
+    width: 30px;
+    cursor: pointer;
+}
 
   .navbar ul li {
     margin: 20px 0;
