@@ -134,9 +134,13 @@
   <script>
     const hamburger = document.querySelector(".hamburger");
     const navLinks = document.querySelector(".nav-links");
+    const body = document.querySelector("body");
 
     hamburger.addEventListener("click", () => {
       navLinks.classList.toggle("nav-active");
+      if (navLinks.classList.contains("nav-active")) {
+        body.style.overflow = "hidden"; 
+      }
     });
   </script>
 </html>

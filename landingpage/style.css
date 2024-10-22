@@ -1,258 +1,304 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: black
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: black;
 }
 
 .header {
-    background: url('car-background.jpg') no-repeat center center/cover;
-    height: 100vh;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  background: url("car-background.jpg") no-repeat center center/cover;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 1em 2em;
-    margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 2em;
+  margin-top: 2rem;
 }
 
 .navbar .logo img {
-    width: 150px;
-    position: absolute;
-    margin-top: -5rem;
+  width: 150px;
+  position: absolute;
+  margin-top: -5rem;
 }
 
 .nav-links {
-    display: flex;
-    list-style: none;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
 }
 
 .nav-links li {
-    margin: 0 1em;
+  margin: 0 1em;
 }
 
 .nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2em;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
 }
 
 .login {
-    background: red;
-    color: white;
-    padding: 0.5em 1.5em;
-    text-decoration: none;
-    border-radius: 5px;
+  background: red;
+  color: white;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
 .hero {
-    text-align: center;
-    margin-top: auto;
-    padding: 2em;
+  text-align: center;
+  margin-top: auto;
+  padding: 2em;
 }
 
-.hero img{
-    top: 0;
-    left: 0;
-    width: 100%;
-    /* background-position: center; */
-    /* background-size: cover; */
-    position: absolute;
-    z-index: -1;
-    /* height: 100vh; */
+.hero img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* background-position: center; */
+  /* background-size: cover; */
+  position: absolute;
+  z-index: -1;
+  /* height: 100vh; */
 }
 
 .hamburger {
-    display: none;
+  display: none;
 }
 
 .hero h1 {
-    font-size: 3em;
+  font-size: 3em;
 }
 
 .hero p {
-    font-size: 1.2em;
-    margin-top: 1em;
+  font-size: 1.2em;
+  margin-top: 1em;
 }
 
 .latest-services {
-    padding: 2em;
-    background: #f8f8f8;
-    text-align: center;
+  padding: 2em;
+  background: #f8f8f8;
+  text-align: center;
 }
 
 .latest-services h2 {
-    font-size: 2em;
-    margin-bottom: 1em;
+  font-size: 2em;
+  margin-bottom: 1em;
 }
 
 .service-container {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 1em;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1em;
 }
 
 .service-box {
-    background: white;
-    padding: 1em;
-    border-radius: 10px;
-    width: 25%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: white;
+  padding: 1em;
+  border-radius: 10px;
+  width: 25%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .service-box i {
-    color: red;
-    width: 50px;
-    margin-bottom: 2rem;
+  color: red;
+  width: 50px;
+  margin-bottom: 2rem;
 }
 
 .hot-offers {
-    padding: 2em;
-    background-color: white;
+  padding: 2em;
+  background-color: white;
 }
 
 .hot-offers h2 {
-    text-align: center;
-    margin-bottom: 1em;
+  text-align: center;
+  margin-bottom: 1em;
 }
 
 .filter-buttons {
-    text-align: center;
-    margin-bottom: 2em;
+  text-align: center;
+  margin-bottom: 2em;
 }
 
 .filter-buttons button {
-    
-    padding: 0.5em 1.5em;
-    margin: 0 0.5em;
-    background: red;
-    color: white;
-    border: none;
-    cursor: pointer;
-    height: 25px;
-    font-size: 16px;
-    border-radius: 5px;
+  padding: 0.5em 1.5em;
+  margin: 0 0.5em;
+  background: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  height: 25px;
+  font-size: 16px;
+  border-radius: 5px;
 }
 
 .car-offers {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .car-box {
-    background: white;
-    padding: 1em;
-    margin: 1em;
-    width: 20%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+  background: white;
+  padding: 1em;
+  margin: 1em;
+  width: 20%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .car-box img {
-    width: 100%;
+  width: 100%;
 }
 .car-box h3 {
-    color: red;
+  color: red;
 }
 
 .car-box p {
-    margin: 0.5em 0;
+  margin: 0.5em 0;
 }
 
 .rent-btn {
-    background: red;
-    color: white;
-    padding: 0.5em 1.5em;
-    border: none;
-    cursor: pointer;
+  background: red;
+  color: white;
+  padding: 0.5em 1.5em;
+  border: none;
+  cursor: pointer;
 }
 
 .footer {
-    /* background: black; */
-    color: white;
-    padding: 2em 0;
+  /* background: black; */
+  color: white;
+  padding: 2em 0;
 }
 
 .footer-content {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .footer-logo img {
-    position: absolute;
-    left: -25px;
-    width: 250px;
+  position: absolute;
+  left: -25px;
+  width: 250px;
 }
 
-.footer-info, .footer-links, .contact-form {
-    width: 10%;
+.footer-info,
+.footer-links,
+.contact-form {
+  width: 10%;
 }
 
-.footer-info p, .footer-links ul {
-    margin-bottom: 1em;
+.footer-info p,
+.footer-links ul {
+  margin-bottom: 1em;
 }
 
 .footer-links ul {
-    list-style: none;
+  list-style: none;
 }
 
 .footer-links a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
-.contact-form textarea, .contact-form input {
-    width: 100%;
-    margin-bottom: 1em;
-    padding: 0.5em;
+.contact-form textarea,
+.contact-form input {
+  width: 100%;
+  margin-bottom: 1em;
+  padding: 0.5em;
 }
 
 .contact-form button {
-    background: red;
-    color: white;
-    padding: 0.5em 1.5em;
-    border: none;
-    cursor: pointer;
+  background: red;
+  color: white;
+  padding: 0.5em 1.5em;
+  border: none;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
-    .navbar{
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-    }
-    .hamburger{
-        display: block;
-    }
-    .nav-links {
-        display: none;
-    }
-    .wrapper-hamburger {
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-        gap: 10px;
-    }
+  .navbar ul {
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #333;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%); /* Initially hidden */
+    transition: transform 0.3s ease-in-out;
+  }
 
-    .hero img{
-        top: 0;
-        left: 0;
-        width: -200%;
-        background-position: center;
-        position: absolute;
-        z-index: -1;
-        height: 100vh;
-    }
+  /* When the .nav-active class is added, the menu slides in */
+  .nav-links.nav-active {
+    transform: translateX(0); /* Show the menu */
+    position: fixed;
+    top: -1px;
+  }
+
+  .navbar ul li {
+    margin: 20px 0;
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+  }
+
+  .hamburger {
+    display: block; /* Display the hamburger on smaller screens */
+  }
+
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #333;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%); /* Initially hidden */
+    transition: transform 0.5s ease-in-out;
+    z-index: 999;
+  }
+
+  /* Wrapper for hamburger and login button */
+  .wrapper-hamburger {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+  }
+
+  .hero img {
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width for mobile */
+    background-position: center;
+    position: absolute;
+    z-index: -1;
+    height: 100vh;
+  }
+
+  .nav-active {
+    background-color: white;
+  }
 }
