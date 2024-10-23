@@ -28,15 +28,14 @@ function validateRegistration() {
         error[2].innerHTML = "Password confirmation cannot be empty";
     }
 
-    if(password.value != password_confirmation.value) {
+    if(password.value != password_confirmation.value || password_confirmation.value == "" && password.value == ""){
         error[2].style.display = "block";
         error[2].innerHTML = "Password does not match";
     }
 
-    if(password.value == password_confirmation.value){
+    if(password.value == password_confirmation.value && password_confirmation.value != "" && password.value != ""){
         return true;
     }
-
 }
 
 form.addEventListener("change", () => {
