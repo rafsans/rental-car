@@ -5,7 +5,7 @@ let error = document.querySelectorAll(".error");
 let form = document.getElementById("form-register");
 
 form.addEventListener("submit", (event) => {
-    event.preventDefault();
+    // event.preventDefault();
     validateRegistration();
     check(validateRegistration());
 });
@@ -48,6 +48,6 @@ function check(param){
     if(param == true){
         localStorage.setItem("email", email.value);
         localStorage.setItem("password", password.value);
-        window.location.href = "login.html";
+        // window.location.href = "login.html";
     }
 }

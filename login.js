@@ -7,15 +7,11 @@ let wrapperModal = document.querySelector(".wrapper-modal");
 let modal = document.querySelector(".modal");
 
 formLogin.addEventListener("submit", (event) => {
-  event.preventDefault();
   if (
     emailLogin.value == localEmail &&
     passwordLogin.value == localPassword
   ) {
     console.log("login success");
     wrapperModal.style.display = "block";
-    setTimeout(() => {
-      window.location.href = "dashboard/dashboard.html";
-    }, 1000);
   }
 });

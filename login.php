@@ -7,7 +7,7 @@
   <body>
     <div class="container">
       <h1>Login</h1>
-      <form class="wrapper" id="form-login">
+      <form class="wrapper" id="form-login" action="php/login.php" method="POST">
         <div class="form-group">
           <input
             type="email"
@@ -27,7 +27,7 @@
         <a href="#" class="forgot-password">Forgot password?</a>
         <button type="submit" class="btn">Login</button>
         <div class="signup">
-          Don't have an account? <a href="register.html">SignUp</a>
+          Don't have an account? <a href="register.php">SignUp</a>
         </div>
       </form>
     </div>

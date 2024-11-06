@@ -14,6 +14,7 @@
     />
   </head>
   <body>
+    <?php session_start(); ?>
     <div class="container">
       <div class="sidebar">
         <div class="logo">
@@ -31,7 +32,7 @@
             <a href="#"><i class="icon-car"></i> Car List</a>
           </li>
           <li>
-            <a href="#"><i class="icon-signout"></i> Sign Out</a>
+            <a href="../php/logout.php"><i class="icon-signout"></i> Sign Out</a>
           </li>
         </ul>
       </div>
@@ -39,6 +40,9 @@
       <div class="main-content">
         <div class="header">
           <i class="icon-menu"></i>
+        </div>
+        <div>
+         
         </div>
         <div class="stats">
           <div class="stat-box">
@@ -57,6 +61,11 @@
             <h3>25</h3>
             <p>Total Testimonials</p>
           </div>
+        </div>
+        <div style="margin-left: 2rem;">
+          <h1>Nama : <?php echo $_SESSION['nama']; ?></h1>
+          <h1>Email : <?php echo $_SESSION['email']; ?></h1>
+          <h1>Password : <?php echo $_SESSION['password']; ?></h1>
         </div>
       </div>
     </div>
