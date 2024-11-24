@@ -11,7 +11,7 @@ form.addEventListener("submit", (event) => {
 });
 
 error.forEach(error => {
-    error.style.display = "none"; // Sembunyikan semua error
+    error.style.display = "none"; 
 });
 
 function validateRegistration() {

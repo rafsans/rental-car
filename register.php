@@ -1,47 +1,58 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>Signup</title>
-  <link rel="stylesheet" href="style.css" />
+	<title>Register</title>
+	<link rel="icon" href="assets/icon.png" />
+	<link rel="stylesheet" href="style-rev.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@500;700&display=swap"
+		rel="stylesheet" />
+	<link
+		rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 
 <body>
-  <div class="container">
-    <h1>Signup</h1>
-    <form class="wrapper" id="form-register" action="php/register.php" method="POST">
-      <p class="error"></p>
-      <div class="form-group">
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Enter your email" />
-      </div>
-      <div class="form-group">
-        <p class="error"></p>
-        <input
-          type="password"
-          id="password"
-          name="password"
-          placeholder="Enter your password" />
-      </div>
-      <div class="form-group">
-        <p class="error"></p>
-        <input
-          type="password"
-          id="password-confirmation"
-          name="password-confirmation"
-          placeholder="Enter your password Confirmation" />
-      </div>
-      <button type="submit" class="btn">Signup</button>
-      <div class="signup">
-        Already have an account? <a href="login.php">Login</a>
-      </div>
-    </form>
-  </div>
+	<div class="container">
+		<header>
+			<nav>
+				<div class="logo">
+					<img src="assets/logo.jpg" alt="" />
+				</div>
+				<input type="checkbox" id="click" />
+				<label for="click" class="menu-btn">
+					<i class="fas fa-bars"></i>
+				</label>
+				<ul>
+					<li><a href="login.php" class="btn_login">Login</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<div class="center">
+				<div class="form-login">
+					<h3>Register</h3>
+					<form action="php/register.php" method='post'>
+						<input class="input" type="email" name="email" id="email"
+							placeholder="Email" />
+						<input class="input" type="text" name="username"
+							placeholder="Username" />
+						<input class="input" type="password" name="password" id="password"
+							placeholder="Password" />
+						<input class="input" type="password" name="password-confirmation" id="password-confirmation"
+							placeholder="Password Confirmation" />
+						<button type="submit" class="btn_login" name="register"
+							id="register">
+							Register
+						</button>
+					</form>
+				</div>
+			</div>
+		</main>
+	</div>
 </body>
 <script src="register.js"></script>
-
 </html>

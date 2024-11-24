@@ -1,42 +1,51 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Login</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <h1>Login</h1>
-      <form class="wrapper" id="form-login" action="php/login.php" method="POST">
-        <div class="form-group">
-          <input
-            type="email"
-            id="email-login"
-            name="email-login"
-            placeholder="Enter your email"
-          />
-        </div>
-        <div class="form-group">
-          <input
-            type="password"
-            id="password-login"
-            name="password-login"
-            placeholder="Enter your password"
-          />
-        </div>
-        <a href="#" class="forgot-password">Forgot password?</a>
-        <button type="submit" class="btn">Login</button>
-        <div class="signup">
-          Don't have an account? <a href="register.php">SignUp</a>
-        </div>
-      </form>
-    </div>
-    <div class="wrapper-modal">
-      <div class="modal">
-        <img src="assets/salah.png" alt="" />
-        <h1>Login Berhasil</h1>
-      </div>
-    </div>
-  </body>
-  <script src="login.js" ></script>
+<html lang="en">
+<head>
+  <title>Login</title>
+  <link rel="icon" href="assets/icon.png" />
+  <link rel="stylesheet" href="style-rev.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+	href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@500;700&display=swap"
+			rel="stylesheet"
+		/>
+  <link
+	rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+  <div class="container">
+     <header>
+	  <nav>
+	    <div class="logo">
+		 <img src="assets/logo.jpg" alt="" />
+	    </div>
+	    <input type="checkbox" id="click" />
+	    <label for="click" class="menu-btn">
+	       <i class="fas fa-bars"></i>
+	    </label>
+	    <ul>
+		<li><a href="register.php" class="btn_login">Register</a></li>
+	    </ul>
+        </nav>
+	</header>
+	<main>
+	  <div class="center">
+	    <div class="form-login">
+		 <h3>Login</h3>
+		 <form action="php/login.php" method='post'>
+		   <input class="input" type="text" name="email-login"
+			    placeholder="Email" />
+	         <input class="input" type="password" name="password-login"
+			    placeholder="Password" />
+		   <button type="submit" class="btn_login" name="login"  
+                      id="login"> Login
+		   </button>
+		 </form>
+	  </div>
+	</main>
+   </div>
+</body>
+<script src="login.js"></script>
 </html>
