@@ -13,7 +13,7 @@ if (empty($email) || empty($password)) {
             window.location = 'login.php';
         </script>
     ";
-    exit;
+    header('Location: ../login.php');
 }
 
 $stmt = $koneksi->prepare("SELECT * FROM admin WHERE email = ?");
@@ -36,6 +36,7 @@ if ($result->num_rows > 0) {
                 window.location = 'login.php';
             </script>
         ";
+        header('Location: ../login.php');
     }
 } else {
     echo "
@@ -44,6 +45,7 @@ if ($result->num_rows > 0) {
             window.location = 'login.php';
         </script>
     ";
+    header('Location: ../login.php');
 }
 
 $stmt->close();

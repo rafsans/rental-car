@@ -38,7 +38,7 @@ if ($_SESSION['username'] == null) {
                 </a>
             </li>
             <li>
-                <a href="transaction/transaction.php">
+                <a href="../car/car.php">
                     <i class='bx bx-car'></i>
                     <span class="links_name">List Car</span>
                 </a>

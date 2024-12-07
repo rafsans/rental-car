@@ -1,0 +1,14 @@
+<?php
+
+include '../php/conn.php';
+$id = $_GET['id'];
+$sql = "DELETE FROM car WHERE id = '$id'";
+$result = mysqli_query($koneksi, $sql);
+if ($result) {
+    echo "
+            <script>
+                alert('Data Berhasil Dihapus');
+                window.location = 'car.php';
+            </script>
+        ";
+}
